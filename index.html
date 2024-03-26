@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="png" href="icon.jpg">
     <script src="java.js"></script>
     <script src="https://kit.fontawesome.com/177935a2b5.js" crossorigin="anonymous"></script>
 </head>
@@ -14,14 +15,23 @@
     <div id="header">
         <div class="container">
             <nav>
+                <div class="box">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-a"></i>
+                    <i class="fa-solid fa-t"></i>
+                    <i class="fa-solid fa-i"></i>
+                    <i class="fa-solid fa-s"></i>
+                    <i class="fa-solid fa-h"></i>
+                    <i class="fa-solid fa-e"></i>
+                    <i class="fa-solid fa-y"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
                 <ul id="sidemenu">
-                    <li><a href="#header"> home</a></li>
-                    <li><a href="#About"> About</a></li>
-                    <li><a href="#portfolio">My Projects</a></li>
-                    <li><a href="#contact"> Contact</a></li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
+                    <li><a href="#About"><b>About</b></a></li>
+                    <li><a href="#skills"><b>My Skills</b></a></li>
+                    <li><a href="#portfolio"><b>Projects</b></a></li>
+                    <li><a href="#contact"><b>Contact me</b></a></li>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p><b>Atishey Jain</b></p>
@@ -29,6 +39,7 @@
             </div>
         </div>
     </div>
+    <br>
     <!-- about from here -->
     <div id="About">
         <div class="container">
@@ -38,53 +49,74 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>I am a dedicated and passionate student pursuing a Bachelor's
-                        degree in Computer Science and Engineering. With a keen interest in problem-solving and a knack
-                        for web development</p>
+                    <p>As a committed and enthusiastic student pursuing my Bachelor's degree in Computer Science and
+                        Engineering, I'm driven by a strong desire to learn and achieve excellence. I'm always curious
+                        and eager to understand more about technology, and I enjoy finding new and creative ways to
+                        solve problems. I love exploring different aspects of technology, always looking for fresh ideas
+                        and ways to make things better.</p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links active-link" onclick="opentab('certificate')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('participate')">Participation</p>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
+
+                    <div class="tab-contents active-tab" id="certificate">
+
                         <ul>
-                            <li><span>Web Development</span><br>other skills</li>
-                            <li><span>Web Development</span><br>other skills</li>
-                            <li><span>Web Development</span><br>other skills</li>
+                            <li><span>Crash Course on Python <a
+                                        href="https://drive.google.com/file/d/1E0S4Rts-LlUaUg1Yw8dsi2M0hk9vJFKj/view?usp=sharing"><i
+                                            class="fa-solid fa-file"></i></a></span><br>Complete information about tools
+                                and syntax essential for python programming.</a>
+                            </li>
+                            <li><span>Advanced Python <a
+                                        href="https://drive.google.com/file/d/1w-ZplxBXYifm1qd4-xLs2-RGb7adA99x/view?usp=sharing"><i
+                                            class="fa-solid fa-file"></i></a></span><br>Usage and application of Python
+                                and possibilites of its projects in future.</li>
+                            <li><span>Data Structures</span><br>Data strucutres for competitive and problem solving
+                                skills.</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents" id="participate">
                         <ul>
-                            <li><span>Web Development</span><br>other experience</li>
-                            <li><span>Web Development</span><br>other experience</li>
-                            <li><span>Web Development</span><br>other experience</li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>Web Development</span><br>other education</li>
-                            <li><span>Web Development</span><br>other education</li>
-                            <li><span>Web Development</span><br>other education</li>
+                            <li><span>Hero Coding competition <a
+                                        href="https://drive.google.com/file/d/1DcLKXGUtQ0KlUlprJpda6EZg48hUmt7j/view?usp=sharing"><i
+                                            class="fa-solid fa-file"></i> </a></span><br>other education</li>
+                            <li><span>LoReal Quiz competition <a
+                                        href="https://drive.google.com/file/d/18iXSS_Mgt8iAIz0w_berkSyJ3_mKsJOk/view?usp=sharing">
+                                        <i class="fa-solid fa-file"></i></a></span><br>other education</li>
+                            <li><span>24-Hour Hackathon <a
+                                        href="https://drive.google.com/file/d/1nRNNSvc4JYPY3d6UCK47BTa0pb7AXGpT/view?usp=sharing"><i
+                                            class="fa-solid fa-file"></i> </a></span><br>other education</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <hr color="red">
     </div>
-    <!-- services start after this -->
-    <div id="services">
+    <!-- skills start after this -->
+    <div id="skills">
         <div class="container">
-            <h1 class="sub-title"> Services</h1>
-            <div class="services-list">
+            <h1 class="sub-title"> My Skills </h1>
+            <div class="skills-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Development</h2>
-                    <p>here is the description for it.</p>
+                    <p>Front-end development is meant to attract audiance and other people to use/view our product HTML
+                        provides the structural framework, defining elements like headings, paragraphs, and images. CSS
+                        enhances presentation, allowing developers to customize fonts, colors, and layout to create
+                        visually stunning designs. Meanwhile, JavaScript adds dynamic functionality, enabling
+                        interactive features such as form validation, animations, and real-time updates.</p>
                 </div>
                 <div>
                     <i class="fa-brands fa-python"></i>
                     <h2>Python</h2>
-                    <p>here is the description for it.</p>
+                    <p>Python is a popular and user-friendly programming language, renowned for its simplicity and
+                        readability. With its extensive libraries and frameworks, Python is widely used in web
+                        development, data analysis, machine learning, and automation tasks. Its clean syntax and dynamic
+                        typing facilitate rapid development and easy maintenance of code. Python's versatility and
+                        active community support make it an ideal choice for both beginner and experienced programmers.
+                    </p>
                 </div>
                 <div>
                     <i class="fa-solid fa-database"></i>
@@ -123,53 +155,84 @@
             </div>
         </div>
     </div>
+    <hr color="red">
     <!-- portfolio ater this comment -->
     <div id="portfolio">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="port.jpg" width="400px">
+                    <img src="p1.png" width="400px" height="350px">
                     <div class="layer">
-                        <h3>App 1</h3>
-                        <p>discription for this 1</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3><b>AI Assistant</b></h3>
+                        <p>This Python script creates a voice assistant web application using Streamlit. Users can
+                            select a language and type questions into an input box. The input is sent to OpenAI's
+                            GPT-3.5 model to generate a response. The response is displayed as text and played back as
+                            speech using text-to-speech. Additional features include a button to open a browser window
+                            for typing input.</p>
+                        <a href="https://github.com/Atishey17/Assistant/blob/main/typeinput.py" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="port.jpg" width="400px">
+                    <img src="p2.png" width="400px" height="350px">
                     <div class="layer">
-                        <h3>App 2</h3>
-                        <p>discription for this 2</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3><b>Encoder-Decoder</b></h3>
+                        <p> This script implements a simple encryption and decryption tool using Tkinter. Users input
+                            text and a secret key, which are then encrypted or decrypted. Encryption converts the text
+                            into a base64-encoded string. Decryption reverses the process, decoding the base64 string
+                            back into text. The interface allows users to reset input fields and perform encryption or
+                            decryption actions.</p>
+                        <a href="https://github.com/Atishey17/Encoder-Decoder/blob/main/message.py" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="port.jpg" width="400px">
+                    <img src="p3.png" width="400px" height="350px">
                     <div class="layer">
-                        <h3>App 3</h3>
-                        <p>discription for this 3</p>
-                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <h3><b>URL Shortner</b></h3>
+                        <p>The project initializes an Express application and configures middleware for request
+                            handling. Routes for the root and users are defined, along with view engine setup using ejs.
+                            Middleware functions for logging, parsing JSON and URL-encoded data, and handling cookies
+                            are applied. Static file serving is set up to serve files from the public directory.</p>
+                        <a href="https://github.com/Atishey17/urlShortner/blob/main/app.js" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="p4.png" width="400px" height="350px">
+                    <div class="layer">
+                        <h3><b>ASCII Image</b></h3>
+                        <p>This fun python code utilizes OpenCV to capture video from the webcam. Each frame is
+                            converted to grayscale for ASCII art conversion. ASCII art conversion is performed by
+                            mapping pixel values to characters. The converted ASCII art is displayed in a Tkinter
+                            window. The program continuously updates the ASCII art display.</p>
+                        <a href="https://github.com/Atishey17/ASCII-photo/blob/main/main.py" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See more</a>
         </div>
+        <br><br>
+        <hr color="red">
     </div>
+
     <!-- contact form after this -->
     <div id="contact">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact me</h1>
-                    <p><i class="fas fa-paper-plane"></i>here is email to contact</p>
-                    <p><i class="fas fa-phone-square-alt"></i> no here</p>
+                    <p><i class="fas fa-paper-plane"></i>atisheyj74@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91-9084720813</p>
                     <div class="social-icons">
-                        <a href="profile link here"><i class="fa-brands fa-discord"></i></a>
-                        <a href="profile link here"><i class="fa-brands fa-github"></i></a>
-                        <a href="profile link here"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Atishey17"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/atishey17/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://leetcode.com/atishey17/"><i><img src="leet.png" width="30px"
+                                    height="30px"></i></a>
                     </div>
-                    <a href="file path here" download class="btn btn2">Download file</a>
+                    <a href="https://drive.google.com/file/d/1hwEVKfDEYLLREVbocHM95D1m4uWHhV4Y/view?usp=sharing"
+                        target="_blank" download class="btn btn2">My Resume</a>
                 </div>
                 <div class="contact-right">
                     <form>
@@ -185,6 +248,7 @@
         <div class="copyright">
             <p>Made My Atishey Jain :D</p>
         </div>
+        <h6>dont copy mine please -By Atishey Jain</h6>
     </div>
 </body>
 
